@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <ImageView
+        android:id="@+id/imageLogo5"
+        android:layout_width="378dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_app_logo"
+        tools:ignore="VectorDrawableCompat" />
+
+    <Button
+        android:id="@+id/createTest"
+        style="@android:style/Widget.Button"
+        android:layout_width="386dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/sea_1"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/create_test"
+        android:textColor="@color/purple_3"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setCategory" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="390dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_3"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTest"
+        tools:text="@string/hint_second" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/category"
+        android:textColor="@color/purple_3"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo5" />
+
+    <Spinner
+        android:id="@+id/setCategory"
+        android:layout_width="386dp"
+        android:layout_height="60dp"
+
+        android:layout_marginTop="12dp"
+        android:background="@drawable/form_border"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:inputType="textUri"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt"
+        android:text="Выберите категорию"
+        android:textColor="@color/bg_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title3"
+        tools:text="Выберите категорию" />
+</androidx.constraintlayout.widget.ConstraintLayout>

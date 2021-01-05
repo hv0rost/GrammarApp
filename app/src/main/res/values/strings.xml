@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GrammarApp</string>
+    <string name="editUrl">Вставьте ссылку на интересующий вас ресурс</string>
+    <string name="postButton">Составить тест</string>
+    <string name="urlHint">Укажите URL-адрес</string>
+    <string name="url">URL-адрес</string>
+    <string name="next">Далее</string>
+    <string name="hint">После нажатия по кнопке СОСТАВИТЬ ТЕСТ Вы перейдете на новое окно, где сможете выбрать тему для своего теста</string>
+    <string name="hint_second">Выберите КАТЕГОРИЮ, тест по которой хотели бы пройти</string>
+    <string name="category">Категория</string>
+    <string name="create_test">СОСТАВИТЬ ТЕСТ</string>
+    <string name="getAnswer">Получить ответы</string>
+    <string-array name="categorySpinner">
+        <item>Past Simple</item>
+    </string-array>
+</resources>

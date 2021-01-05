@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:ignore="MissingDefaultResource">
+
+
+    <ScrollView
+        android:id="@+id/scrollUp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_submit2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/testString"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/purple_3"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_submit" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/getAnswer"
+        style="@android:style/Widget.Button"
+        android:layout_width="300dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/sea_1"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/getAnswer"
+        android:textColor="@color/purple_3"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollDown"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollUp"
+        app:layout_constraintVertical_bias="0.943">
+
+        <TextView
+            android:id="@+id/answerString"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/purple_3"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_submit" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
