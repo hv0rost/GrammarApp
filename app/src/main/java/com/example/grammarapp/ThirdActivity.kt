@@ -26,7 +26,7 @@ class ThirdActivity : AppCompatActivity() {
         getAnswer = findViewById(R.id.getAnswer)
         val gson = GsonBuilder().serializeNulls().create()
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://192.168.0.14:5000/")
+            .baseUrl("https://grammar-app-heroku.herokuapp.com/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
 
@@ -97,7 +97,7 @@ class ThirdActivity : AppCompatActivity() {
         super.onSaveInstanceState(outState)
     }
 
-    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
         answerVerbs!!.text = savedInstanceState?.getString(buttonClicked)
     }

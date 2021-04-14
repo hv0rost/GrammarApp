@@ -33,7 +33,7 @@ class FirstActivity : AppCompatActivity() {
 
         val gson = GsonBuilder().serializeNulls().create()
         val retrofit = Retrofit.Builder()
-                .baseUrl("http://192.168.0.14:5000/")
+                .baseUrl("https://grammar-app-heroku.herokuapp.com/")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build()
 
